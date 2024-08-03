@@ -6,7 +6,7 @@ n = int(input())  # 자릿수
 
 # 소수 구하기 함수
 def isPrime(num):
-    for i in range(2, int(num/2+1)):
+    for i in range(2, int(num**0.5)+1):
         if num % i == 0:  # 나눠지면
             return False  # 소수가 아님
     return True
